@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<title>StandByMe</title>
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+		<!--<link rel="preload" href="../resources/fonts/HyundaiSansTextKRBold.woff2" as="font" type="font/woff2" crossorigin/>
+		<link rel="preload" href="../resources/fonts/HyundaiSansTextKRBold.woff" as="font" type="font/woff" crossorigin/>
+		<link rel="preload" href="../resources/fonts/HyundaiSansTextKRMedium.woff2" as="font" type="font/woff2" crossorigin/>
+		<link rel="preload" href="../resources/fonts/HyundaiSansTextKRMedium.woff" as="font" type="font/woff" crossorigin/>
+		<link rel="preload" href="../resources/fonts/HyundaiSansTextKRRegular.woff2" as="font" type="font/woff2" crossorigin/>
+		<link rel="preload" href="../resources/fonts/HyundaiSansTextKRRegular.woff" as="font" type="font/woff" crossorigin/>-->
+		<script type="text/javascript" src="../resources/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="../resources/js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="../resources/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="inner">
+				<div class="category-wrap">
+					<ul class="category-menu">
+						<li class="active">ELECTRIC VEHICLES</li>
+						<li>SKYTRACK</li>
+						<li>ELECTRIC</li>
+						<li>SKYTRACK2</li>
+					</ul>
+				</div>
+				<div class="swiper stand-swiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<div class="figure">
+								<a href="javascript:;" class="btn-layer" data-link="#layer-vd1" data-url="https://www.youtube.com/embed/_LBLu5tBo4Q">
+									<img src="../resources/img/dummy_poster1.jpg" alt="ioniq5" />
+									<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+								</a>
+							</div>
+							<div class="reflection">
+								<img src="../resources/img/dummy_poster1.jpg" alt="ioniq5" />
+								<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="figure">
+								<a href="javascript:;" class="btn-layer" data-link="#layer-vd1" data-url="https://www.youtube.com/embed/_LBLu5tBo4Q">
+									<img src="../resources/img/dummy_poster2.jpg" alt="ioniq5" />
+									<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+								</a>
+							</div>
+							<div class="reflection">
+								<img src="../resources/img/dummy_poster2.jpg" alt="ioniq5" />
+								<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="figure">
+								<a href="javascript:;" class="btn-layer" data-link="#layer-vd1" data-url="https://www.youtube.com/embed/_LBLu5tBo4Q">
+									<img src="../resources/img/dummy_poster3.jpg" alt="ioniq5" />
+									<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+								</a>
+							</div>
+							<div class="reflection">
+								<img src="../resources/img/dummy_poster3.jpg" alt="ioniq5" />
+								<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="figure">
+								<a href="javascript:;" class="btn-layer" data-link="#layer-vd1" data-url="https://www.youtube.com/embed/_LBLu5tBo4Q">
+									<img src="../resources/img/dummy_poster4.jpg" alt="ioniq5" />
+									<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+								</a>
+							</div>
+							<div class="reflection">
+								<img src="../resources/img/dummy_poster4.jpg" alt="ioniq5" />
+								<div class="title">IONIQ 5 The Journey <br />to a Sustainable Future</div>
+							</div>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+				<script>
+					var swiperStand = new Swiper(".stand-swiper", {
+						loop: true,
+						speed: 1100,
+						effect: "coverflow",
+						grabCursor: true,
+						centeredSlides: true,
+						slidesPerView: "auto",
+						coverflowEffect: {
+							rotate: 20,
+							stretch: 30,
+							depth: 20,
+							modifier: 1,
+							scale: 0.9,
+							slideShadows: false,
+						},
+						pagination: {
+							el: ".stand-swiper .swiper-pagination",
+							clickable : true,
+						},
+						observer: true,
+						observeParents: true,
+					  });
+				</script>
+			</div>
+		</div>
+		<!-- 레이어 -->
+		<div class="dim"></div>
+		<!-- 기본팝업 -->
+		<div id="layer-vd1" class="layerpop type-center-vd">
+			<div class="layer-inner">
+				<a class="layer-close" href="javascript:;" data-url="https://www.youtube.com/embed/_LBLu5tBo4Q"><span class="blind">닫기</span></a>
+				<div class="vd-wrap">
+					<iframe src="https://www.youtube.com/embed/_LBLu5tBo4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

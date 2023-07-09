@@ -1,0 +1,110 @@
+/********************
+	style
+	ver1.0
+	2023.03.08
+	임수경
+
+********************/
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'HyundaiSansTextKRBold';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HyundaiSansTextKRBold'), url('../fonts/HyundaiSansTextKRBold.woff2') format('woff2'), url('../fonts/HyundaiSansTextKRBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'HyundaiSansTextKRMedium';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HyundaiSansTextKRMedium'), url('../fonts/HyundaiSansTextKRMedium.woff2') format('woff2'), url('../fonts/HyundaiSansTextKRMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'HyundaiSansTextKRRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HyundaiSansTextKRRegular'), url('../fonts/HyundaiSansTextKRRegular.woff2') format('woff2'), url('../fonts/HyundaiSansTextKRRegular.woff') format('woff');
+}
+
+/* CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, button {background:transparent;border:0;-webkit-box-sizing:border-box;box-sizing:border-box;font-weight:normal;font-family:"KakaoSmall", HelveticaNeue, DroidSans, Sans-serif, Helvetica;letter-spacing:-0.5px;margin:0;padding:0;vertical-align:baseline;}
+html {font-size:16px;color:#161616;}
+html, body {font-family:"HyundaiSansTextKRBold";}
+body * {font-family:"HyundaiSansTextKRBold"; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+nav ul, li {list-style:none;}
+a {background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;text-decoration:none;vertical-align:baseline;}
+img {max-width:100%;vertical-align:top;}
+
+table {table-layout:fixed;border-collapse: collapse; border-spacing: 0; vertical-align: baseline; word-break: break-all; }
+
+input {
+	border-radius:0;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:"HyundaiSansTextKRBold", HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+	font-weight:normal;
+	margin:0;
+	letter-spacing:-.5px;
+	padding:0;
+	vertical-align:top;
+}
+
+select, textarea {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:"HyundaiSansTextKRBold", HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+	letter-spacing:-.5px;
+}
+
+.hide { font-size:0; height:0; left:-20000px; overflow:hidden; position:absolute; text-indent:-20000px; width:0; }
+
+header,
+nav,
+section,
+article,
+aside,
+footer { display:block; }
+
+html,
+body {height:100%;width:100%;-webkit-text-size-adjust:none;-ms-text-size-adjust :none;-moz-text-size-adjust :none;-o-text-size-adjust :none;-webkit-font-smoothing: antialiased}
+a, button {-webkit-tap-highlight-color: transparent;}
+.blind {font-size:0;line-height:0;color:transparent;width:0;height:0;opacity:0;overflow:hidden;}
+strong * {font-weight:700;}
+body {background:#1f1f1f;}
+.wrap {position:relative;width:100vw;height:100vh;margin:0 auto;font-family:"HyundaiSansTextKRBold";font-weight:400;overflow:hidden;}
+.inner {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+.category-wrap {text-aligN:center;}
+.category-menu {display:inline-block;background:#b2b2b2;border-radius:58px;white-space:nowrap;}
+.category-menu li {display:inline-block;padding:11px 15px 9px 15px;font-size:38px;line-height:38px;color:#fff;letter-spacing:-0.5px;}
+.category-menu li.active {padding:11px 30px 9px 30px;background:#107fe0;border-radius:58px;}
+.category-menu li:hover {cursor:pointer;}
+.stand-swiper {width:1080px;padding:100px 0 310px 0;overflow: visible;}
+.stand-swiper .swiper-slide {width:648px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;opacity:0.7}
+.stand-swiper .swiper-slide-active {opacity:1;box-shadow: 0px 60px 100px 50px rgba(0,0,0,0.8);-webkit-box-shadow: 0px 60px 100px 50px rgba(0,0,0,0.8);-moz-box-shadow: 0px 60px 100px 50px rgba(0,0,0,0.8);}
+.stand-swiper .swiper-slide>div {position:relative;}
+.stand-swiper .swiper-slide .reflection {position:absolute;top:100%;left:0;width:100%;transform:rotateX(180deg);filter:blur(3px);-webkit-filter:blur(3px);opacity:0.8;}
+.stand-swiper .swiper-slide .reflection:after {content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1f1f1f+0,1f1f1f+100&1+65,0+99 */
+background: -moz-linear-gradient(top,  rgba(31,31,31,1) 0%, rgba(31,31,31,1) 65%, rgba(31,31,31,0) 99%, rgba(31,31,31,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(31,31,31,1) 0%,rgba(31,31,31,1) 65%,rgba(31,31,31,0) 99%,rgba(31,31,31,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(31,31,31,1) 0%,rgba(31,31,31,1) 65%,rgba(31,31,31,0) 99%,rgba(31,31,31,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#001f1f1f',GradientType=0 ); /* IE6-9 */
+}
+.stand-swiper .swiper-slide .figure {z-index:2;}
+.stand-swiper .swiper-slide .figure a {display:block;position:relative;}
+.stand-swiper .swiper-slide .figure a:after {content:"";display:block;width:154px;height:154px;background:url(../img/icon_play.png) 0 0 no-repeat;position:absolute;top:calc(50% - 100px);left:50%;transform:translate(-50%,-50%);}
+.stand-swiper .swiper-slide .figure a img {transition:all 0.8s ease-in-out;}
+html.is-opened .stand-swiper .swiper-slide-active .figure a img {transform:scale(5);}
+html.is-opened .stand-swiper .swiper-slide-active .figure a img {transform:scale(5);}
+.stand-swiper .swiper-slide .title {font-size:52px;line-heighT:61px;color:#fff;font-family:"HyundaiSansTextKRBold";font-weight:400;position:absolute;bottom:55px;left:0;width:100%;padding:0 25px;box-sizing:border-box;}
+.stand-swiper .swiper-pagination-bullet {width:22px;height:22px;background:#bfbfbf;opacity:1;margin:0 10px !important;border-radius:22px;transition:width 0.5s ease-in-out;}
+.stand-swiper .swiper-pagination {bottom:70px !important;}
+.stand-swiper .swiper-pagination-bullet-active {width:62px;background:#107fe0;}
+.layerpop {display:none;position:fixed;width:100vw;height:100vh;top:0;left:0;z-index:2001;}
+.layerpop .layer-inner {position:relative;}
+.layerpop .layer-inner .layer-close {display:block;width:70px;height:70px;position:absolute;top:50px;right:50px;background:url(../img/btn_close_layer.png) center center no-repeat;background-size:100%;z-index:2002;}
+.layerpop.is-opened {}
+.layerpop.type-center-vd .vd-wrap {position:relative;width:100vw;height:100vh;}
+.layerpop.type-center-vd .vd-wrap  iframe {position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:#000;}
