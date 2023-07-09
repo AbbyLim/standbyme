@@ -7,23 +7,23 @@ $(function(){
 			};
 		});
 	});
-	var embed;
+	var $src;
 	//팝업 공통 열기
 	function openpop(obj){
 		var pops = $(obj).attr("data-link");
-		//$(pops).addClass("is-opened");
 		$(pops).fadeIn(500);
 		$("html").addClass("is-opened");
-		var embed = $(obj).attr("data-url");
+		var $src = $(obj).attr("data-url");
 		var frame = $(pops).find(".vd-wrap");
-		frame.html('<iframe src="' + embed +'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+		frame.html('<video><source src="../resources/videos/' + $src +'" type="video/mp4"></video>');
+		$(pops).find("video").get(0).play();
 	};
 	//팝업 공통닫기
 	function closepop(obj){
 		var pops = $(obj).closest(".layerpop");
-		//$(pops).removeClass("is-opened");
 		$(pops).delay(500).fadeOut(500);
 		$("html").removeClass("is-opened");
+		//$(pops).find("video").get(0).pause();
 	};
 	
 	//팝업 열기 버튼 공통
@@ -38,7 +38,7 @@ $(function(){
 		$(this).off("click").on("click" , function(e){
 			e.preventDefault();
 			closepop(this);
-			embed = $(this).attr("data-link");
+			$src = $(this).attr("data-url");
 			$(this).next(".vd-wrap").html("");
 		});
 	});
