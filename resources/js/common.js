@@ -4,6 +4,7 @@ $(function(){
 			if(!$(this).hasClass("active")){
 				$(this).addClass("active");
 				$(this).siblings().removeClass("active");
+				//$(".stand-swiper").removeClass("activated");
 			};
 		});
 	});
@@ -48,4 +49,9 @@ $(function(){
 			$(this).toggleClass("on");
 		});
 	};
+	document.addEventListener('ended', function(e){
+		if($(e.target).is('video')){
+			closepop(e.target);
+		}
+	}, true);
 });
